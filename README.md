@@ -33,11 +33,9 @@ Utilize o [yarn](https://classic.yarnpkg.com/lang/en/) para iniciar o projeto. D
 
 ### Variáveis de ambiente
 
-adicione as variáveis ambiente de acordo com as suas credenciais
-
 Altere o nome do `.env.local.example` para `.env.local`
 
-
+> adicione as variáveis ambiente de acordo com as suas credenciais
 
 ### Para iniciar a aplicação
 
