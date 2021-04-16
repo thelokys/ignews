@@ -47,8 +47,6 @@ Execute a aplicação
 
 - `yarn dev`
 
-> Para mais informações verifique o `package.json`
-
 ## :computer: Tecnologias
   
 Tecnologias utilizada:
