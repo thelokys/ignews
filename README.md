@@ -32,10 +32,12 @@ Entre da pasta do projeto `cd ignews`
 Utilize o [yarn](https://classic.yarnpkg.com/lang/en/) para iniciar o projeto. Dentro da pasta execute `yarn install` para baixar as dependências
 
 ### Variáveis de ambiente
-```
-# Altere o nome do .env.local.example para .env.local
-# adicione as variáveis ambiente de acordo com as suas credenciais
-```
+
+adicione as variáveis ambiente de acordo com as suas credenciais
+
+Altere o nome do `.env.local.example` para `.env.local`
+
+
 
 ### Para iniciar a aplicação
 
