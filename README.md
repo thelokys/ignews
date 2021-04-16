@@ -8,7 +8,7 @@
  
 <h4/>
 <p align="center">
-  <img src="https://img.shields.io/badge/NextJS%20-Ignite-red" alt="Master class Nodejs"/>
+  <img src="https://img.shields.io/badge/NextJS%20-IgNews-orange" alt="Master class Nodejs"/>
 <p/>
 
 <p align="center">
