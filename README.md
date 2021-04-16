@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-   :books: Projeto de postagem com inscrição mensal, estilo medium
+   :books: Projeto de postagem com inscrição mensal, no estilo medium
 </h4>
  
 <h4/>
