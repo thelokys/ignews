@@ -11,8 +11,8 @@
   <img src="https://img.shields.io/badge/NextJS%20-Ignite-red" alt="Master class Nodejs"/>
 <p/>
 
-<img align="center" src=".github/website.png" height="350" width="500"/>
-<img align="center" src=".github/payment.png" height="350" width="500"/>
+<img align="center" src=".github/website.png" height="300" width="500"/>
+<img align="center" src=".github/payment.png" height="300" width="500"/>
 
 ## :bulb: Instalação
 
