@@ -13,7 +13,7 @@
 
 <p align="center">
     <img align="center" src=".github/website.png" height="300" width="500"/>
-    <br/>
+    <br/><br/>
     <img align="center" src=".github/payment.png" height="300" width="500"/>
 <p/>
 
