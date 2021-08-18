@@ -1,17 +1,15 @@
-import { query as q } from 'faunadb'
-
+import { query as q } from 'faunadb';
 import NextAuth from 'next-auth';
-import { session } from 'next-auth/client';
 import Providers from 'next-auth/providers';
 
-import { fauna } from '../../../services/fauna'
+import { fauna } from '../../../services/fauna';
 
 export default NextAuth({
   providers: [
     Providers.GitHub({
       clientId: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
-      scope: 'read:user'
+      scope: 'read:user',
     }),
   ],
   callbacks: {
@@ -26,7 +24,7 @@ export default NextAuth({
                   "ref",
                   q.Get(
                     q.Match(
-                      q.Index("user_by_email"),
+                      q.Index('user_by_email'),
                       q.Casefold(session.user.email)
                     )
                   )
@@ -39,20 +37,22 @@ export default NextAuth({
             ])
           )
         )
+
         return {
           ...session,
           activeSubscription: userActiveSubscription
-        }
-      } catch (err) {
+        };
+      } catch {
         return {
           ...session,
           activeSubscription: null
-        }
+        };
       }
     },
     async signIn(user, account, profile) {
-      const { email } = user
-      try {
+      const { email } = user;
+
+      try{
         await fauna.query(
           q.If(
             q.Not(
@@ -70,16 +70,18 @@ export default NextAuth({
             q.Get(
               q.Match(
                 q.Index('user_by_email'),
-                q.Casefold(email)
+                q.Casefold(user.email)
               )
             )
           )
         )
-        return true
-      } catch (error) {
-        return false
+
+        return true;
+      } catch {
+        return false;
       }
-      
+
+
     }
   }
 })
